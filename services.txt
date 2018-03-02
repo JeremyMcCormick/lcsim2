@@ -1,0 +1,70 @@
+IMPLEMENTED 
+---------------
+
+-LogService
+  -access to Logger objects
+  
+-HistogramService
+  -create AIDA trees and save them to disk
+  
+-ParticlePropertiesService
+  -wrapper to ParticlePropertiesProvider
+  
+-TimerService
+  -timing utilities for performance monitoring
+  
+-DetectorService
+  -get refs to Detector and DetectorElements (uses GeomConverter API)
+
+NOT IMPLEMENTED
+---------------
+
+-conditions
+  -get current conditions manager
+ 
+-random number
+
+-events (or should this be through process arguments like in Driver?)
+  -getCurrentEvent
+  -getCurrentRunHeader
+  
+-job options
+  -global parameters and options
+  
+-auditor for resource tracking (memory usage, etc.)
+   (from Gaudi)
+   -NameAuditor: print before and after process method
+   -ChronoAuditor: CPU usage total at end and average per event
+   -MemoryAuditor: memory usage during execution
+ 
+-incident (notification listeners such as beginEvent, endEvent, beginRun, endRun, etc.)
+
+-conversion 
+  -one data format to another; for example StdHep to LCIO
+  -between units
+
+-Driver service
+  -get the top Driver
+  -Driver arguments
+
+-ntuples
+  -AIDA ntuples 
+  -JavaROOT?
+
+--------
+
+-tools
+  -CalDigi (aka digisim)
+  -CalClusterBuilder (aka Clusterer interface)
+  -SiSim
+  -Helix extrap
+  -Tracking
+  -Math (lcsim-math, apache-commons-math)
+  -FastMC
+  -ReconCheater
+  -PFA (UIowa, yuck!)
+  -Vertexing
+  
+ -constants
+   -physics and unit constants lookup
+  

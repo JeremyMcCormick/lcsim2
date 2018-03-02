@@ -1,0 +1,5 @@
+org.lcsim.service.impl.LogServiceImpl
+org.lcsim.service.impl.HistogramServiceImpl
+org.lcsim.service.impl.ParticlePropertiesServiceImpl
+org.lcsim.service.impl.TimerServiceImpl
+org.lcsim.service.impl.DetectorServiceImpl
